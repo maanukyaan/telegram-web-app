@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+
     <header class="balance">
       <div class="balance__container">
         <h1>Баланс</h1>
@@ -46,19 +47,63 @@
           </button>
         </li>
         <li>
-          <button disabled>
-            <i class="bi bi-plus-circle-fill"></i>
-            <span>Маркет</span>
-          </button>
-        </li>
-        <li>
           <button class="btn btn-primary" disabled>
             <i class="bi bi-arrow-down-up"></i>
             <span>Обменять</span>
           </button>
         </li>
+        <li>
+          <button disabled>
+            <i class="bi bi-list"></i>
+            <span>Меню</span>
+          </button>
+        </li>
       </ul>
     </header>
+
+    <main class="main">
+      <section class="assets">
+        <h2 class="assets__h2">Активы</h2>
+        <div class="assets__container">
+          <div class="asset">
+            <img src="img/icons/ton.png" alt="Toncoin" />
+            <div class="asset__info">
+              <div>
+                <h3>Toncoin</h3>
+                <p>0 TON</p>
+              </div>
+              <div class="asset__price">0,00 ₽</div>
+            </div>
+          </div>
+
+          <div class="asset">
+            <img src="img/icons/btc.png" alt="BTC" />
+            <div class="asset__info">
+              <div>
+                <h3>Bitcoin</h3>
+                <p>0 BTC</p>
+              </div>
+              <div class="asset__price">0,00 ₽</div>
+            </div>
+          </div>
+
+          <div class="asset">
+            <img src="img/icons/usdt.png" alt="USDT" />
+            <div class="asset__info">
+              <div>
+                <h3>USD Tether</h3>
+                <p>0 USDT</p>
+              </div>
+              <div class="asset__price">0,00 ₽</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="history">
+        
+      </section>
+    </main>
 
     <!-- Telegram Web Apps Library -->
     <script src="scripts/telegram-web-app.js"></script>
