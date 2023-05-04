@@ -61,7 +61,7 @@ body {
 .balance ul li button:disabled {
   opacity: 0.65;
   color: var(--tg-theme-link-color, #40a7e3);
-  background-color: var(--tg-theme-bg-color, #ecf6fc);
+  background-color: var(--tg-theme-secondary-bg-color, #ecf6fc);
 }
 .balance ul li i {
   font-size: 24px;
