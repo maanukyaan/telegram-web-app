@@ -12,10 +12,8 @@ html, body
     min-height: 100vh
 
 body
-    --bg-color: var(--tg-theme-bg-color, #fff)
     font-family: sans-serif
-    background-color: var(--bg-color)
-    background: #d9d9d9
+    background-color: var(--tg-theme-bg-color, #fff)
     color: var(--tg-theme-text-color, #222)
     font-size: 14px
     color-scheme: var(--tg-color-scheme)
@@ -23,7 +21,7 @@ body
 .balance
     height: 300px
     width: 100%
-    background-color: #fff
+    background-color: var(--tg-theme-bg-color, #fff)
     display: flex
     flex-direction: column
     align-items: center
@@ -47,8 +45,8 @@ body
 
         li
             width: 23%
-            background: $mainBlue
-            color: #fff
+            background-color: var(--tg-theme-button-text-color, $mainBlue)
+            color: var(--tg-theme-link-color, #fff)
             display: flex
             flex-direction: column
             justify-content: center
@@ -63,10 +61,12 @@ body
 
             span
                 font-size: 13px
+                cursor: default
 
             &:not(:first-child)
-                color: $mainBlue
-                background: $secondaryBlue
+                opacity: 0.65
+                color: var(--tg-theme-link-color, #2678b6)
+                background-color: var(--tg-theme-bg-color, #ffffff)
 
     h1
         font-size: 15px
