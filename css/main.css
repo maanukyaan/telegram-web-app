@@ -128,7 +128,7 @@ main.main .assets .assets__container .asset__info {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 10px 10px 0;
+  padding: 0 15px 10px 0;
   width: 100%;
   border-bottom: 1px solid var(--tg-theme-secondary-bg-color);
 }
@@ -148,5 +148,67 @@ main.main .assets .assets__container .asset:last-child {
   margin-bottom: 0;
 }
 main.main .assets .assets__container .asset:last-child .asset__info {
+  border-bottom: none;
+}
+main.main .transactions {
+  margin: 0;
+  padding: 15px;
+  padding-right: 0 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main.main .transactions h2 {
+  font-size: 16px;
+  color: var(--tg-theme-button-color, #40a7e3);
+}
+main.main .transactions .transactions__container {
+  padding: 10px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main.main .transactions .transactions__container .transaction {
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px 0;
+}
+main.main .transactions .transactions__container .transaction img {
+  height: 50px;
+  width: auto;
+  margin: 0 15px 0 0;
+  border-radius: 50%;
+}
+main.main .transactions .transactions__container .transaction__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px 10px 0;
+  width: 100%;
+  border-bottom: 1px solid var(--tg-theme-secondary-bg-color);
+}
+main.main .transactions .transactions__container .transaction__info h3 {
+  font-size: 18px;
+  margin: 0;
+}
+main.main .transactions .transactions__container .transaction__info p {
+  font-size: 17px;
+  color: #9e9e9e;
+  margin: 0;
+}
+main.main .transactions .transactions__container .transaction__status__container {
+  text-align: right;
+}
+main.main .transactions .transactions__container .transaction__status__container .transaction__price {
+  font-size: 18px;
+}
+main.main .transactions .transactions__container .transaction__status__container .transaction__status {
+  font-size: 17px;
+  color: #9e9e9e;
+}
+main.main .transactions .transactions__container .transaction:last-child {
+  margin-bottom: 0;
+}
+main.main .transactions .transactions__container .transaction:last-child .transaction__info {
   border-bottom: none;
 }/*# sourceMappingURL=main.css.map */
