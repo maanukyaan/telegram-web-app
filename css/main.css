@@ -3,9 +3,14 @@ html, body {
   min-height: 100vh;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
+  --bg-color: var(--tg-theme-bg-color, #fff);
   font-family: sans-serif;
-  background-color: var(--tg-theme-bg-color, #fff);
+  background-color: var(--bg-color);
   color: var(--tg-theme-text-color, #222);
   font-size: 14px;
   color-scheme: var(--tg-color-scheme);
@@ -41,15 +46,17 @@ body {
 }
 .balance ul li button {
   width: 100%;
-  background-color: var(--tg-theme-button-text-color, #40a7e3);
-  color: var(--tg-theme-link-color, #fff);
+  font-size: 12px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--tg-theme-button-color, #50a8eb);
+  color: var(--tg-theme-button-text-color, #ffffff);
+  cursor: pointer;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: none;
+  flex-direction: column;
 }
 .balance ul li button:disabled {
   opacity: 0.65;

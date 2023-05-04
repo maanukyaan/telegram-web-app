@@ -52,7 +52,7 @@
           </button>
         </li>
         <li>
-          <button disabled>
+          <button class="btn btn-primary" disabled>
             <i class="bi bi-arrow-down-up"></i>
             <span>Обменять</span>
           </button>
@@ -62,5 +62,13 @@
 
     <!-- Telegram Web Apps Library -->
     <script src="scripts/telegram-web-app.js"></script>
+
+    <script>
+      function setThemeClass() {
+        document.documentElement.className = Telegram.WebApp.colorScheme;
+      }
+      Telegram.WebApp.onEvent("themeChanged", setThemeClass);
+      setThemeClass();
+    </script>
   </body>
 </html>
