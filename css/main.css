@@ -1,9 +1,82 @@
+@charset "UTF-8";
+html, body {
+  min-height: 100vh;
+}
+
 body {
-  min-height: 100%;
   --bg-color: var(--tg-theme-bg-color, #fff);
   font-family: sans-serif;
   background-color: var(--bg-color);
+  background: #d9d9d9;
   color: var(--tg-theme-text-color, #222);
   font-size: 14px;
   color-scheme: var(--tg-color-scheme);
+}
+
+.balance {
+  height: 300px;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.balance__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+}
+.balance ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 !important;
+  padding: 0 0 20px 0;
+  width: 95%;
+}
+.balance ul li {
+  width: 23%;
+  background: #40a7e3;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.balance ul li i {
+  font-size: 24px;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.balance ul li span {
+  font-size: 13px;
+}
+.balance ul li:not(:first-child) {
+  color: #40a7e3;
+  background: #ecf6fc;
+}
+.balance h1 {
+  font-size: 15px;
+}
+.balance h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.balance h2 span {
+  font-size: 30px;
+  font-weight: bold;
+}
+.balance h2::after {
+  content: "₽";
+  font-family: sans-serif;
+  color: #aaaaaa;
+  position: relative;
+  left: 5px;
+  font-size: 30px;
 }/*# sourceMappingURL=main.css.map */
